@@ -24,6 +24,7 @@ public class GuessTheNumberGame {
             System.out.println("-----------------ROUND " + count + "---------------- ");
 
             int humanGuess = humanPlayer.makeGuess();
+            int lastHumanGuess = humanGuess;
             System.out.println(humanPlayer.getName() + " supone que el número es: " + humanGuess);
 
             if (humanGuess < targetNumber) {
@@ -36,9 +37,18 @@ public class GuessTheNumberGame {
                 break;
             }
             int computerGuess = computerPlayer.makeGuess();
+            if(lastHumanGuess < targetNumber){
+                if(computerGuess < lastHumanGuess){
+                    computerGuess = lastHumanGuess +1;
+                }
+            }else if(lastHumanGuess > targetNumber){
+                if(computerGuess > lastHumanGuess){
+                    computerGuess = lastHumanGuess -1;
+                }
+            }
+
 
             System.out.println("La computadora elige: " + computerGuess);
-
             if (computerGuess < targetNumber) {
                 System.out.println("El número que debes adivinar es mayor.");
             } else if (computerGuess > targetNumber) {
