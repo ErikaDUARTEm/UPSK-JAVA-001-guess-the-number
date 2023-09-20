@@ -38,9 +38,13 @@ public class GuessTheNumberGame {
             }
             int computerGuess = computerPlayer.makeGuess();
             if(lastHumanGuess < targetNumber){
-                computerGuess = lastHumanGuess +1;
+                if(computerGuess < lastHumanGuess){
+                    computerGuess = lastHumanGuess +1;
+                }
             }else if(lastHumanGuess > targetNumber){
-                computerGuess = lastHumanGuess -1;
+                if(computerGuess > lastHumanGuess){
+                    computerGuess = lastHumanGuess -1;
+                }
             }
 
 
