@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class HumanPlayer extends Player {
-    private Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
     public HumanPlayer(String name) {
         super(name);

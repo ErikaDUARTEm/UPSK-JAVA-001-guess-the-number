@@ -6,7 +6,7 @@ abstract class Player {
         this.name = name;
         this.guesses = new int[0];
     }
-
+    public void setLastHumanGuess(int guess){}
     public String getName() {
         return name;
     }
