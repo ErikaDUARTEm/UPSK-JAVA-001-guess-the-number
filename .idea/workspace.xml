@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd5869ca-05ab-4fe5-a291-3dc191cb80eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/HumanPlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ComputerPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessTheNumberGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GuessTheNumberGame.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessTheNumberGame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HumanPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GuessTheNumberGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/GuessTheNumberGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComputerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GuessTheNumberGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessTheNumberGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/HumanPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/HumanPlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HumanPlayerTest">
+  <component name="RunManager" selected="Application.GuessTheNumberGame">
     <configuration name="GuessTheNumberGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GuessTheNumberGame" />
       <module name="GuessTheNumberGame" />
@@ -98,9 +96,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GuessTheNumberGame" />
         <item itemvalue="JUnit.HumanPlayerTest" />
         <item itemvalue="JUnit.GuessTheNumberGameTest" />
-        <item itemvalue="Application.GuessTheNumberGame" />
       </list>
     </recent_temporary>
   </component>
