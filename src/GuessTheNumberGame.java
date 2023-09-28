@@ -12,8 +12,8 @@ public class GuessTheNumberGame {
         System.out.println("Ingresa tu nombre: ");
         String namePlayer = addName.nextLine();
         Player humanPlayer = new HumanPlayer(namePlayer);
-        Player computerPlayer = new ComputerPlayer("Computadora", targetNumber);
-
+        Player computerPlayer = new ComputerPlayer("Computadora");
+        computerPlayer.setTargetNumber();
         System.out.println("Hola 「 ✦ " + humanPlayer.getName() + " ✦ 」 👩🏻 Debes elegir un número entre 1 y 100.");
 
         int count = 0;
