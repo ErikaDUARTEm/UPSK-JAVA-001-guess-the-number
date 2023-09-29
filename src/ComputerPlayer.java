@@ -1,16 +1,16 @@
 import java.util.Random;
 
 public class ComputerPlayer extends Player {
-    private Random random = new Random();
+    Random random = new Random();
     private int lastHumanGuess = -1;
     private int targetNumber;
-    public ComputerPlayer(String name, int targetNumber) {
+
+    public ComputerPlayer(String name) {
         super(name);
-        this.targetNumber = targetNumber;
 
     }
 
-    // Método para establecer la última suposición del jugador humano
+    // Método para establecer la última suposición del jugador
     public void setLastHumanGuess(int lastHumanGuess) {
         this.lastHumanGuess = lastHumanGuess;
     }

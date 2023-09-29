@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd5869ca-05ab-4fe5-a291-3dc191cb80eb" name="Changes" comment="">
+    <list default="true" id="fa8f6dd9-34d6-4c36-a93e-34d6431bdd1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/ComputerPlayerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComputerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GuessTheNumberGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessTheNumberGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/HumanPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/HumanPlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,36 +25,46 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/ComputerPlayer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/GuessTheNumberGame.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/HumanPlayer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Player.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test/ComputerPlayerTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test/GuessTheNumberGameTest.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test/HumanPlayerTest.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2VixisfYwIMAEiPXqQL6do0XnDK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "test",
-    "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "C:/Users/Laboratoria/erika/Skills-Java1/GuessTheNumberGame",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laboratoria/erika/Skills-Java1/GuessTheNumberGame&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Laboratoria\erika\Skills-Java1\GuessTheNumberGame\src" />
@@ -76,11 +84,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuessTheNumberGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in GuessTheNumberGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuessTheNumberGame" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuessTheNumberGameTest" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComputerPlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GuessTheNumberGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ComputerPlayerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComputerPlayerTest.testMakeGuess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GuessTheNumberGame" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ComputerPlayerTest" />
+      <option name="METHOD_NAME" value="testMakeGuess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,20 +123,26 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GuessTheNumberGame" />
+        <item itemvalue="JUnit.ComputerPlayerTest.testMakeGuess" />
+        <item itemvalue="JUnit.ComputerPlayerTest" />
         <item itemvalue="JUnit.HumanPlayerTest" />
-        <item itemvalue="JUnit.GuessTheNumberGameTest" />
+        <item itemvalue="JUnit.All in GuessTheNumberGame" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="dd5869ca-05ab-4fe5-a291-3dc191cb80eb" name="Changes" comment="" />
-      <created>1695332834285</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1695332834285</updated>
-    </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/ComputerPlayerTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
