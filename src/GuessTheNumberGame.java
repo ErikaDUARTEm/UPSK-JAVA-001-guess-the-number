@@ -10,10 +10,12 @@ public class GuessTheNumberGame {
         Scanner addName = new Scanner(System.in);
         System.out.println(" ｡:ﾟ૮ ˶ˆ ﻌ ˆ˶ ა ﾟ:｡ Bienvenido al juego de adivinanza. ｡:ﾟ૮ ˶ˆ ﻌ ˆ˶ ა ﾟ:｡");
         System.out.println("Ingresa tu nombre: ");
+
+        //nombre ingresado por el jugador
         String namePlayer = addName.nextLine();
         Player humanPlayer = new HumanPlayer(namePlayer);
         Player computerPlayer = new ComputerPlayer("Computadora");
-        computerPlayer.setTargetNumber();
+
         System.out.println("Hola 「 ✦ " + humanPlayer.getName() + " ✦ 」 👩🏻 Debes elegir un número entre 1 y 100.");
 
         int count = 0;
@@ -26,6 +28,7 @@ public class GuessTheNumberGame {
             int humanGuess = humanPlayer.makeGuess();
 
             System.out.println(humanPlayer.getName() + " supone que el número es: 👩🏻" + humanGuess);
+            //Se valida que el número ingresado sea entre 1 y 100.
             if (humanGuess >= 1 && humanGuess <= 100) {
                 if (humanGuess < targetNumber) {
                     System.out.println("El número que debes adivinar es mayor. ⬆ ");
@@ -41,7 +44,8 @@ public class GuessTheNumberGame {
                     winner = true;
                     break;
                 }
-                computerPlayer.setLastHumanGuess(humanGuess); // Establece la última suposición del jugador humano
+                // Se le pasa el numero seleccionado por el jugador a la computadora para q decida
+                computerPlayer.setLastHumanGuess(humanGuess);
                 int computerGuess = computerPlayer.makeGuess();
 
                 System.out.println("La computadora elige: \uD83E\uDD16 " + computerGuess);

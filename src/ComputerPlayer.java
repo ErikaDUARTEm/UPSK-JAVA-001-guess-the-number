@@ -4,14 +4,12 @@ public class ComputerPlayer extends Player {
     Random random = new Random();
     private int lastHumanGuess = -1;
     private int targetNumber;
+
     public ComputerPlayer(String name) {
         super(name);
 
     }
 
-    public void setTargetNumber(int targetNumber){
-        this.targetNumber = targetNumber;
-    }
     // Método para establecer la última suposición del jugador
     public void setLastHumanGuess(int lastHumanGuess) {
         this.lastHumanGuess = lastHumanGuess;
