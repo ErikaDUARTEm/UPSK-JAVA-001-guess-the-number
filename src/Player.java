@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 abstract class Player {
     private String name;
     private int[] guesses;
@@ -6,7 +8,8 @@ abstract class Player {
         this.name = name;
         this.guesses = new int[0];
     }
-
+    public void setLastHumanGuess(int guess){};
+    public void setLastComputerGuess(int guess){};
     public String getName() {
         return name;
     }
@@ -22,6 +25,10 @@ abstract class Player {
         guesses = newGuesses;
     }
 
+    public int setTargetNumber() {
+        return 0;
+    }
+
     public abstract int makeGuess();
 
     public void guessHistory() {
@@ -29,6 +36,6 @@ abstract class Player {
         for (int guess : getGuesses()) {
             System.out.print(guess + " ");
         }
-        System.out.println(); // Agrega un salto de línea para separar los historiales
+        System.out.println(); // un salto de línea
     }
 }

@@ -1,4 +1,3 @@
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -6,28 +5,31 @@ public class GuessTheNumberGame {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int targetNumber = random.nextInt(100) + 1; // Genera un número aleatorio entre 1 y 100
+        int targetNumber = random.nextInt(100) + 1;
 
         Scanner addName = new Scanner(System.in);
         System.out.println(" ｡:ﾟ૮ ˶ˆ ﻌ ˆ˶ ა ﾟ:｡ Bienvenido al juego de adivinanza. ｡:ﾟ૮ ˶ˆ ﻌ ˆ˶ ა ﾟ:｡");
         System.out.println("Ingresa tu nombre: ");
+
+        //nombre ingresado por el jugador
         String namePlayer = addName.nextLine();
         Player humanPlayer = new HumanPlayer(namePlayer);
-        Player computerPlayer = new ComputerPlayer("Computadora");
+        Player computerPlayer = new ComputerPlayer("Computadora", targetNumber);
 
         System.out.println("Hola 「 ✦ " + humanPlayer.getName() + " ✦ 」 👩🏻 Debes elegir un número entre 1 y 100.");
 
         int count = 0;
-        boolean winner= false;
+        boolean winner = false;
 
         while (!winner) {
             count++;
             System.out.println("-------*ฅ^•ﻌ•^ฅ*-------ROUND " + count + "--------*ฅ^•ﻌ•^ฅ*-------- ");
 
             int humanGuess = humanPlayer.makeGuess();
-            int lastHumanGuess = humanGuess;
+
             System.out.println(humanPlayer.getName() + " supone que el número es: 👩🏻" + humanGuess);
-            if(humanGuess >= 1 && humanGuess <= 100){
+            //Se valida que el número ingresado sea entre 1 y 100.
+            if (humanGuess >= 1 && humanGuess <= 100) {
                 if (humanGuess < targetNumber) {
                     System.out.println("El número que debes adivinar es mayor. ⬆ ");
                 } else if (humanGuess > targetNumber) {
@@ -42,19 +44,12 @@ public class GuessTheNumberGame {
                     winner = true;
                     break;
                 }
+                // Se le pasa el numero seleccionado por el jugador a la computadora para q decida
+                computerPlayer.setLastHumanGuess(humanGuess);
                 int computerGuess = computerPlayer.makeGuess();
-                if(lastHumanGuess < targetNumber){
-                    if(computerGuess < lastHumanGuess){
-                        computerGuess = lastHumanGuess +1;
-                    }
-                }else if(lastHumanGuess > targetNumber){
-                    if(computerGuess > lastHumanGuess){
-                        computerGuess = lastHumanGuess -1;
-                    }
-                }
-
-
+                computerPlayer.setLastComputerGuess(computerGuess);
                 System.out.println("La computadora elige: \uD83E\uDD16 " + computerGuess);
+
                 if (computerGuess < targetNumber) {
                     System.out.println("El número que debes adivinar es mayor. ⬆");
                 } else if (computerGuess > targetNumber) {
@@ -67,13 +62,14 @@ public class GuessTheNumberGame {
                     winner = true;
                     break;
                 }
-            }else{
-                System.out.println("Error: el número introducido esta fuera del rango. Debe ser del 1 al 100");
-            }
 
+            } else {
+                System.out.println("Error: el número introducido está fuera del rango. Debe ser del 1 al 100");
+            }
         }
 
         // historial de suposiciones al final del juego
+        System.out.println("El número de intentos fueron: " + count);
         humanPlayer.guessHistory();
         computerPlayer.guessHistory();
     }
