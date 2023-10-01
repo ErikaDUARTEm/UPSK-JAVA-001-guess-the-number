@@ -17,11 +17,11 @@ public class HumanPlayerTest {
     void setUp() {
         MockitoAnnotations.openMocks(this);
     }
+    String name = "Aaron";
+    @DisplayName("Nombre del jugador")
+    @Test
+    public void testName(){
 
-   @DisplayName("Nombre del jugador")
-   @Test
-   public void testName(){
-        String name = "Aaron";
        HumanPlayer player = new HumanPlayer(name);
        String NamePlayer =  player.getName();
        assertEquals(name, NamePlayer);
@@ -33,7 +33,7 @@ public class HumanPlayerTest {
    public void testMakeGuess(){
       //Simulando el numero de entrada
        when(scannerMock.nextInt()).thenReturn(42);
-       HumanPlayer humanPlayer = new HumanPlayer("Aaron");
+       HumanPlayer humanPlayer = new HumanPlayer(name);
        humanPlayer.setScanner(scannerMock); // Inyectar el mock del Scanner
 
        // Llamar al método makeGuess()

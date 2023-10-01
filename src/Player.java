@@ -1,12 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 abstract class Player {
     private String name;
-    private int[] guesses;
+    private List<Integer> guesses;
 
     public Player(String name) {
         this.name = name;
-        this.guesses = new int[0];
+        this.guesses = new ArrayList<>();
     }
     public void setLastHumanGuess(int guess){};
     public void setLastComputerGuess(int guess){};
@@ -14,15 +16,12 @@ abstract class Player {
         return name;
     }
 
-    public int[] getGuesses() {
+    public List<Integer> getGuesses() {
         return guesses;
     }
 
     public void addGuess(int guess) {
-        int[] newGuesses = new int[guesses.length + 1];
-        System.arraycopy(guesses, 0, newGuesses, 0, guesses.length);
-        newGuesses[guesses.length] = guess;
-        guesses = newGuesses;
+        guesses.add(guess);
     }
 
     public int setTargetNumber() {

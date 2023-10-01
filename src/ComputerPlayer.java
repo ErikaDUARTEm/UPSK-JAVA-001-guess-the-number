@@ -17,20 +17,24 @@ public class ComputerPlayer extends Player {
         this.lastHumanGuess = lastHumanGuess;
     }
     public void setLastComputerGuess(int lastComputerGuess){this.lastComputerGuess = lastComputerGuess;}
+    public int getLastHumanGuess(){return lastHumanGuess;}
+    public int getLastComputerGuess(){return lastComputerGuess;}
     @Override
     public int makeGuess() {
         int computerGuess= -1;
             //toma en cuenta su suposicion anterior
 
-        if((lastComputerGuess <  targetNumber) && (lastHumanGuess < targetNumber)){
-            computerGuess = random.nextInt(lastHumanGuess + 1, 100+1); // Genera un número entre lastHumanGuess + 1 y 99
-        }else if((lastComputerGuess > targetNumber) && (lastHumanGuess > targetNumber)){
-            computerGuess = random.nextInt(1, lastHumanGuess); // Genera un número entre 1 y lastHumanGuess - 1
+        if(lastHumanGuess < targetNumber){
+            if(lastComputerGuess <  targetNumber) {
+            computerGuess = random.nextInt(lastHumanGuess + 1, 100 + 1);
+              }
+        }else if(lastHumanGuess > targetNumber){
+              if(lastComputerGuess > targetNumber) {
+                  computerGuess = random.nextInt(1, lastHumanGuess);
+              }
         }else{
-            computerGuess = random.nextInt(1,100+1); // Genera un número entre 1 y 99
+            computerGuess = random.nextInt(1,100+1);
         }
-
-        // Si tenemos información sobre la última suposición del jugador humano, ajustamos la suposición de la computadora
 
         addGuess(computerGuess);
         return computerGuess;
