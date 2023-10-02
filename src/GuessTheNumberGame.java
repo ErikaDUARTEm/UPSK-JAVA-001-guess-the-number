@@ -29,7 +29,7 @@ public class GuessTheNumberGame {
 
             System.out.println(humanPlayer.getName() + " supone que el número es: 👩🏻" + humanGuess);
             //Se valida que el número ingresado sea entre 1 y 100.
-            if (humanGuess >= 1 && humanGuess <= 100) {
+            if (isValidGuess(humanGuess)) {
                 if (humanGuess < targetNumber) {
                     System.out.println("El número que debes adivinar es mayor. ⬆ ");
                 } else if (humanGuess > targetNumber) {
@@ -69,8 +69,13 @@ public class GuessTheNumberGame {
         }
 
         // historial de suposiciones al final del juego
+
         System.out.println("El número de intentos fueron: " + count);
         humanPlayer.guessHistory();
         computerPlayer.guessHistory();
+    }
+
+    public static boolean isValidGuess(int humanGuess) {
+        return humanGuess >= 1 && humanGuess <= 100;
     }
 }

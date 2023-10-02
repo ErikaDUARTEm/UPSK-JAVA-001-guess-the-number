@@ -24,18 +24,19 @@ public class ComputerPlayer extends Player {
         int computerGuess= -1;
             //toma en cuenta su suposicion anterior
 
-        if(lastHumanGuess < targetNumber){
-            if(lastComputerGuess <  targetNumber) {
-            computerGuess = random.nextInt(lastHumanGuess + 1, 100 + 1);
-              }
-        }else if(lastHumanGuess > targetNumber){
-              if(lastComputerGuess > targetNumber) {
-                  computerGuess = random.nextInt(1, lastHumanGuess);
-              }
-        }else{
-            computerGuess = random.nextInt(1,100+1);
+        if (lastHumanGuess < targetNumber) {
+            if (lastComputerGuess < targetNumber) {
+                computerGuess = random.nextInt(lastHumanGuess + 1, targetNumber);
+            } else {
+                computerGuess = random.nextInt(targetNumber + 1, 100 + 1);
+            }
+        } else {
+            if (lastComputerGuess > targetNumber) {
+                computerGuess = random.nextInt(1, lastHumanGuess);
+            } else {
+                computerGuess = random.nextInt(1, targetNumber);
+            }
         }
-
         addGuess(computerGuess);
         return computerGuess;
     }

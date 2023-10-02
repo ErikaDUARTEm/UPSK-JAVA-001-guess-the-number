@@ -10,6 +10,7 @@ import org.mockito.MockitoAnnotations;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class HumanPlayerTest {
+    String name = "Aaron";
     @Mock
     private Scanner scannerMock;
 
@@ -17,7 +18,8 @@ public class HumanPlayerTest {
     void setUp() {
         MockitoAnnotations.openMocks(this);
     }
-    String name = "Aaron";
+
+
     @DisplayName("Nombre del jugador")
     @Test
     public void testName(){

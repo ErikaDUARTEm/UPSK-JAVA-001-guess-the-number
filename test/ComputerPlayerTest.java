@@ -1,6 +1,9 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
 
 
 public class ComputerPlayerTest {
@@ -22,8 +25,14 @@ public class ComputerPlayerTest {
     }
     @Test
     public void testMakeGuess(){
-        ComputerPlayer computerPlayer = new ComputerPlayer(name, 50);
+        int targetNumber = 50;
+        ComputerPlayer computerPlayer = new ComputerPlayer(name, targetNumber);
 
+        int numberComputer = computerPlayer.getLastHumanGuess();
+        assertNotNull(computerPlayer);
+        assertTrue(numberComputer < targetNumber);
+        assertFalse(numberComputer > targetNumber);
+        assertNotEquals(numberComputer, targetNumber);
 
     }
 }
