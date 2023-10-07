@@ -28,7 +28,7 @@ public class ComputerPlayerTest {
         int targetNumber = 50;
         ComputerPlayer computerPlayer = new ComputerPlayer(name, targetNumber);
 
-        int numberComputer = computerPlayer.getLastHumanGuess();
+        int numberComputer = computerPlayer.getLastComputerGuess();
         assertNotNull(computerPlayer);
         assertTrue(numberComputer < targetNumber);
         assertFalse(numberComputer > targetNumber);

@@ -6,19 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="fa8f6dd9-34d6-4c36-a93e-34d6431bdd1a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/.idea/Skills-Java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/ComputerPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/GuessTheNumberGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/HumanPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/assets/guess-the-number-demo.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Skills-Java/assets/guess-the-number.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComputerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GuessTheNumberGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessTheNumberGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ComputerPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ComputerPlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +37,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -86,7 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in GuessTheNumberGame">
+  <component name="RunManager" selected="Application.GuessTheNumberGame">
     <configuration name="GuessTheNumberGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GuessTheNumberGame" />
       <module name="GuessTheNumberGame" />
@@ -102,11 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuessTheNumberGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComputerPlayerTest.testMakeGuess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuessTheNumberGame" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuessTheNumberGameTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ComputerPlayerTest" />
+      <option name="METHOD_NAME" value="testMakeGuess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in GuessTheNumberGame" />
         <item itemvalue="Application.GuessTheNumberGame" />
+        <item itemvalue="JUnit.ComputerPlayerTest.testMakeGuess" />
+        <item itemvalue="JUnit.All in GuessTheNumberGame" />
         <item itemvalue="JUnit.GuessTheNumberGameTest.testInvalidRange" />
         <item itemvalue="JUnit.GuessTheNumberGameTest.testRange1to100" />
-        <item itemvalue="JUnit.GuessTheNumberGameTest" />
       </list>
     </recent_temporary>
   </component>
